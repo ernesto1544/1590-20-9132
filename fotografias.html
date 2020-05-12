@@ -1,53 +1,155 @@
-  <!Doctype html>
-  <head>
-     <meta charset="utf-8">>
-     <title>"fotografias"</title>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Paisajes de Guatemala</title>
+	<link rel="stylesheet" type="text/css" href="css/slicebox.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+	<script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
+	
 
-<h1><p style="text-align: center;"><strong>Paisajes de Guatemala</strong></p></h1>
+</head>
+<body>
+	<div class="container">
+
+		
+
+			<h1>GUATEMALA <span>País de la Eterna Primavera</span></h1>
+			
+			
+
+			<div class="wrapper">
+
+				<ul id="sb-slider" class="sb-slider">
+					<li>
+						<a href="#" target="_blank"><img src="01.png" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Escuintla- Autopista Palín</h3>
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="02.png" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Sololá- Panajachel</h3>
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="03.png" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Antigual Guatemala- Arco Santa Catalina</h3>
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="04.png" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Antigua Guatemala- Cerro de la cruz</h3>
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="05.png" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Huehuetenango- Laguna Brava</h3>
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="06.png" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>R&iacute;o Dulce- Catillo de San Felipe</h3>
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="07.png" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Alta Verapaz- Semuc Champey</h3>
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="08.png" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Quetzaltenango- Fuentes Georginas</h3>
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="09.png" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Pet&eacute;n- Lago de Pet&eacute;n Itz&aacute</h3>
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="10.png" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Santa Rosa, El salto</h3>
+						</div>
+					</li>
+				</ul>
+
+				<div id="shadow" class="shadow"></div>
+
+				<div id="nav-arrows" class="nav-arrows">
+					<a href="#">Next</a>
+					<a href="#">Previous</a>
+				</div>
+
+			</div><!-- /wrapper -->
+			
+         <center><a href="index.html"><img src="imagenes/botone5.png"width="8%" eight="8%"></a></center>
+			<p class="info"><strong>Ing.:</strong>Ernesto Osoy</p>
 
 
+		</div>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slicebox.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				
+				var Page = (function() {
 
-    <body bgcolor="00ffff">  
-     <br> <br>  <br>
-     <center>
-       
-    <img src="Imagenes/imagen1.jpg" width="250" height="200" alt="Autopista palin" title="Autopista Palin" style="float: left;"/>
-    
-     
-    <img src="Imagenes/imagen2.jpg" width="250" height="200" alt="Panajachel" title="Panajachel" style="float: right;"/>
-      
-     <img src="Imagenes/imagen3.jpg" width="250" height="200" alt="volcanes" title="volcanes"/>
-      <br> <br>  <br> 
-  
-    <img src="Imagenes/imagen4.jpg" width="250" height="200" alt="Antigua Guatemala" title="Antigua Guatemala" style="float: left;"/>
-      
-     <img src="Imagenes/imagen5.jpg" width="250" height="200" alt="solola" title="solola" style="float: right;"/>
-     
-   <img src="Imagenes/imagen6.jpg" width="250" height="200" alt="Castillo san felipe" title="Castillo san felipe"/> 
-      <br> <br>  <br> 
-  
-    <img src="Imagenes/imagen7.jpg" width="250" height="200" alt="xela" title="xela" style="float: left;"/>
-      
-  <img src="Imagenes/imagen8.jpg" width="250" height="200" alt="Semuc Champey" title="Semuc Champey"/> 
-        
-    <img src="Imagenes/imagen9.jpg" width="250" height="200" alt="Atardecer" title="Atardecer" style="float: right;"/>
-       <br> <br>  <br> 
-      
+					var $navArrows = $( '#nav-arrows' ).hide(),
+						$shadow = $( '#shadow' ).hide(),
+						slicebox = $( '#sb-slider' ).slicebox( {
+							onReady : function() {
 
-    <img src="Imagenes/imagen10.jpg" width="250" height="200" alt="San Juan tecuaco" title="San Juan tecuaco"/>
-     </center>
-     
-<a href="index.html"><h2>Volver Menu<h2></a>
+								$navArrows.show();
+								$shadow.show();
 
-    </div>
+							},
+							orientation : 'r',
+							cuboidsRandom : true
+						} ),
+						
+						init = function() {
 
-     </div>
+							initEvents();
+							
+						},
+						initEvents = function() {
 
+							// add navigation events
+							$navArrows.children( ':first' ).on( 'click', function() {
 
-  </body>
-  </head>
+								slicebox.next();
+								return false;
 
+							} );
 
+							$navArrows.children( ':last' ).on( 'click', function() {
+								
+								slicebox.previous();
+								return false;
 
+							} );
 
-  </html>
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+			});
+		</script>
+		
+</body>
+</html>
